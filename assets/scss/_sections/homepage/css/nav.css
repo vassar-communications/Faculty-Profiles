@@ -1,0 +1,9 @@
+.stories .u-NavSite {
+  position: absolute;
+  top: 0;
+  right: 0; }
+.stories .u-NavSite li {
+  display: inline !important; }
+.stories .u-NavSite a,
+.stories .u-NavSite a:visited {
+  color: #fff; }

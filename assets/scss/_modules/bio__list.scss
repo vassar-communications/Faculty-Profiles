@@ -1,0 +1,35 @@
+.u-Bio__list {
+	@include unBulletedList();
+	
+	.u-Bio__listItem {
+		position: relative;
+		padding: .1em 0;
+		margin: 0;
+
+		&:first-child {
+			border: none;
+		}
+		a {
+			border: none;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

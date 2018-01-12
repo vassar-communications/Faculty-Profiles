@@ -1,0 +1,18 @@
+.displayBlock {
+	display: block;
+}
+
+
+
+.noBulletList {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
+.twocols {
+	@media screen and (min-width: $medium) {
+		@include multiCols(2);
+	}
+}

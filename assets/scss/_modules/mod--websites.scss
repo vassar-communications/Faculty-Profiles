@@ -1,0 +1,12 @@
+.mod--websites {
+	.u-Bio__listItem {
+		&:after {
+			color: #aaa;
+			content: "\00B7";
+			padding: 0 0.3em 0 0.4em;
+		}
+		&:last-child:after {
+			content: none;
+		}
+	}
+}

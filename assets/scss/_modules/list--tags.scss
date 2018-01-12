@@ -1,0 +1,25 @@
+.u-Bio__list.list--tags {
+	.u-Bio__listItem {
+		border: none;
+		display: inline-block;
+		margin-right: 0.16em;
+	    padding: 0.15em 0;
+
+		a {
+			font-family: $sans-serif;
+			background: $gray-bg;
+			color: #696152;
+			border-radius: .2em;
+			padding: .2em .5em;
+			font-size: .8em;
+			font-weight: normal;
+			@include no-nice-underlines();
+		}
+		a:hover {
+			background: darken($gray-bg, 5%);
+			color: #696152;
+			padding: .2em .5em;
+			border-color: darken($gray-bg, 15%);
+		}
+	}
+}

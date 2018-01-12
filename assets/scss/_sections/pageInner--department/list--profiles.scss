@@ -1,0 +1,76 @@
+/*	This module overrides styling in _modules/itemlist. */
+
+.list--profiles {
+	.item {
+		.item__image {
+			// width: 16%;
+			float: none;
+			margin-right: 0;
+			width: 100%;
+		}
+		.item__title {
+			.subtitle {
+				width: 90%;	
+			}			
+		}
+		.item__title,
+		.item__content {
+			border: none;
+		    padding: 0.4rem;
+		    padding-left: 0;
+			width: calc(100% - (20% + 1rem));
+
+			@media (min-width: $small) {
+				width: calc(100% - (16% + 1rem));
+			}
+
+			
+			p {
+				margin: 0;
+				width: 75%;
+			}
+		}
+		.item__content {
+			padding-top: 0 !important;			
+		}
+		.item__link {
+			&.link--degrees {
+				background-image: none;
+				font-size: 0.9em;
+				line-height: 1.2;
+				display: block;
+			}
+			&.link--image {
+				float: left;
+				display: inline-block;
+				width: 20%;
+				overflow: hidden;
+				max-height: 7.4em;	
+
+				@media (min-width: $small) {
+					width: 16%;					
+				}
+			}
+		}
+		.list--tags {
+			margin-top: 0.3em;
+
+			.u-Bio__listItem {
+				padding: 0.05em 0;
+			}
+			.u-Bio__listItem__link {
+				font-size: 0.7em;
+			}
+		}
+	}
+}
+.department__sitelink {
+	background-image: none;
+	display: block;
+	font-family: $sans-serif;
+	padding: 2em 0 1em 0;
+
+	&:visited {
+		color: $burgundy-1;
+	}
+}

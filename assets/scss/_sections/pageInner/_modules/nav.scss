@@ -1,0 +1,9 @@
+.u-pageInner {
+	.u-NavSite__level {
+		&.u-NavSite__level--1 {
+			@media (min-width: $small) {
+				@include VKIT__horizontal-nav(0, 0.3em 0.4em);
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.SocialAccount__iconList {
+	@include VKIT__horizontal-nav(0.2em, 0.3em, ".SocialAccount__iconContainer");
+				
+	.SocialAccount__iconContainer {
+		width: 1.4em;
+		display: inline-block;
+		
+		.SocialAccount__iconTarget {
+			background: none;
+			display: block;
+			transition: ease 0.5s all;
+			
+			&:hover {
+				opacity: 0.4;
+			}
+		}
+	}
+}

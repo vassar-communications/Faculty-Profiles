@@ -1,0 +1,20 @@
+.studies__list {
+	@extend .inlineList;
+
+	.study__link {
+		font-family: $serif;
+		font-size: 1.6em;
+		display: inline-block;
+		
+		&:hover,
+		&:visited:hover {
+			color: #000;
+		}
+				
+		&:after {
+			content: "·";
+			color: #aaa;
+			margin: 0 .2em;
+		}
+	}
+}

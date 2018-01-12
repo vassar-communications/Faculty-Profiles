@@ -1,0 +1,16 @@
+.u-biosInner {
+	.profilephoto__imagelink {
+		display: inline-block;
+		transition: all ease 0.4s;
+
+		&:hover {
+			opacity: 0.6;
+		}
+		
+		.u-Figure {
+			width: auto;
+			float: none;
+			margin: 0 0 1em 0;
+		}
+	}
+}

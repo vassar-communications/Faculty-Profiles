@@ -1,0 +1,35 @@
+.u-Bio__contactItemLabel {
+	visibility: hidden;
+	position: absolute;
+}
+.u-Bio__contactInfo {
+	margin: 0 !important;
+	
+	a {
+		border: none;
+		@include no-nice-underlines();
+	}
+	.u-Bio__contactItem {
+		list-style-type: none;
+		margin-bottom: 0;
+		padding: .04em 0;
+	}
+	.u-Bio__contactItemLabel--box {
+		position: static;
+		visibility: visible;
+	}
+	.u-Bio__contactData {
+		font-family: $serif !important;
+		font-size: 1em !important;
+	}
+	.u-Bio__contactItem--hours {
+		.u-Bio__contactItemLabel {
+			visibility: visible;
+			position: static;
+			font-weight: bold;
+		}
+		.u-Bio__colon {
+			display: inline;
+		}
+	}
+}

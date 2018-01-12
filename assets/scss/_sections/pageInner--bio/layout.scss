@@ -1,0 +1,28 @@
+.page--profile {
+	.onleave {
+	    margin-left: 0.4em;
+	    display: inline-block;
+	    padding: 0.2em 0.4em;
+	    margin-top: -0.3em;
+	}
+	.u-PageNav {
+		@media (min-width: $medium) {
+			margin-top: -5em;
+			margin-bottom: 5em;
+		}
+	}
+	.u-Bio__mod {
+		clear: both;
+		margin-bottom: 1em !important;
+	}
+	.u-Bio__photo {
+		margin: 0 0 1em 0;
+		
+		@media (min-width: $small) {
+			width: 44%;
+			float: left;
+			padding: 0 1em .4em 0;
+			margin: 0;
+		}
+	}
+}

@@ -1,0 +1,7 @@
+.profile__career {
+  clear: both; }
+  .profile__career .u-Bio__listItem {
+    border: none;
+    display: inline; }
+    .profile__career .u-Bio__listItem.item--atVassarSince {
+      margin-right: 0.7em; }

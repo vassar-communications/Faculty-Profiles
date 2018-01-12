@@ -1,0 +1,65 @@
+/*	This template is for pages with sticky sidenav. If we ever need to add
+	a page which uses this, add its class to the selector below (or add the
+	"page--hasStickySideNav" class to the HTML tag).
+*/
+
+.page--hasStickySideNav,
+.page--interests,
+.page--profile {
+	#{$LAYOUT__contentContainer} {
+		max-width: 62rem;
+	}
+	.u-pageTitle {
+		@media (min-width: $medium) {
+			// float: right;
+			width: 100%;
+			display: inline-block;
+		}
+	}
+	.u-PageNav {
+		text-align: center;
+		margin-top: 2em;
+
+		@media (min-width: $medium) {
+			text-align: left;
+		    position: sticky;
+		    position: -webkit-sticky;
+		    margin-left: -11.6em;
+		    
+		    height: 0;
+		    margin-top: -2em;
+		    margin-bottom: 2em;
+		    top: 2em;
+		    // float: left;
+		    width: 9em;
+	    }
+	}
+	.u-lMain {
+		display: flex;
+		flex-direction: column-reverse;
+
+		@media (min-width: $medium) {
+			flex-direction: row-reverse;
+		}
+	}
+	.u-lContent {
+		@media (min-width: $medium) {
+			float: right;
+			padding: 0 0 0 2em;
+			width: 76%;
+		}
+		@media (min-width: $large) {
+			width: 82%;
+		}
+	}
+	.u-lAside {
+		display: none; /* blocks page nav in IE11 */
+		@media (min-width: $medium) {
+			padding-left: 0;
+			width: 24%;
+		}
+		@media (min-width: $large) {
+			width: 18%;
+		}		
+	}	
+}

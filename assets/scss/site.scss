@@ -1,0 +1,29 @@
+@import "_config";
+@import "~basictools";
+@import "~vkit";
+
+@import "_tools/_all";
+@import "_modules/_all";
+@import "_sections/_all";
+@import "layout";
+@import "type";
+@import "color";
+
+@import "_vendor/_all";
+
+body > p {
+	display: none;
+}
+
+.u-pageHome {
+	.u-lHeader {
+		padding-bottom: 1em !important;
+	}
+}
+.studies__list .study__link {
+	font-size: 1.4em !important;
+}
+
+.u-Search {
+	display: none !important;
+}

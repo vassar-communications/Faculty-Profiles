@@ -1,0 +1,25 @@
+.u-folderResearch-interests.page--list {
+	.u-pageTitle {
+		margin-bottom: 0.6em;
+	}
+}
+
+
+.page--interests {
+	.u-PageNav {
+		float: none;
+
+/*
+		@media screen and (min-width: $medium) {
+			height: 0;
+			margin-top: -2em;
+			margin-bottom: 2em;
+		}
+*/
+	}
+	.list--clean {
+		.list__item {
+			margin: 0.4em 0;
+		}
+	}
+}

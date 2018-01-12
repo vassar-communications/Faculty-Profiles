@@ -1,0 +1,52 @@
+.u-pageHome {
+	.u-lHeader {
+		margin: 0;
+		color: $homepage-textcolor;
+		border: none;
+		padding: 0 2rem;
+		padding-top: 6.8em;
+
+		@media screen and (min-width: $small) {
+			padding-top: 3em;
+		}
+	}
+	.u-Masthead__siteName {
+		margin-top: 0;
+	}
+	.u-Masthead__siteName--link {
+		color: $homepage-textcolor;
+		font-family: $serif;
+		font-weight: 100;
+	}
+	.u-Masthead__siteName:after {
+		display: none;
+	}
+
+	/*
+
+	.u-Masthead__vassar--link {
+		color: #aaa;
+	}
+
+	@media (min-width: $small) {
+		.u-Masthead__vassar {
+			border: none;
+			position: absolute;
+		    padding: 2.6rem 0 0.4rem 0;
+		    border-bottom: 1px solid rgba(0,0,0,0.1);
+		    margin-left: 2rem;
+		    margin-right: 2rem;
+
+			.u-Masthead__vassar--link {
+				&:link, &:visited {
+					color: #882345;
+				}
+				&:hover, &:visited:hover {
+					color: #000;
+				}
+			}
+		}	
+	}
+	*/
+
+}

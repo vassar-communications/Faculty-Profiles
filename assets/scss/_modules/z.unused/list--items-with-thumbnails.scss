@@ -1,0 +1,52 @@
+.list--headlinesThumbs {
+	
+	.list--headlinesThumbs__item {
+		overflow: hidden;
+		margin-bottom: 1em;
+		margin-right: 1%;
+		border-bottom: 1px solid #eee;
+		padding-bottom: 1em;
+
+		@media (min-width: $medium) {
+		}
+	}
+	.list--headlinesThumbs__itemLink,
+	.list--headlinesThumbs__itemLink:visited {
+		color: #000;
+	}
+	.list--headlinesThumbs__itemLink:hover,
+	.list--headlinesThumbs__itemLink:visited:hover {
+		color: #888;
+	}
+	
+	.list--headlinesThumbs__thumb {
+		margin-bottom: .5em;
+
+		@media (min-width: $medium) {
+			margin-bottom: 0;
+			width: 32%;
+			float: left;
+		}
+	}
+	.list--headlinesThumbs__title,
+	.list--headlinesThumbs__desc {
+		@media (min-width: $medium) {
+			width: 66%;
+			float: right;
+		}
+	}
+	.list--headlinesThumbs__title {
+		margin-top: -.1em;
+		margin-bottom: .6em;
+		line-height: 1;
+		font-size: 1.1em;
+		
+		@media (min-width: $medium) {
+			margin-bottom: .3em;
+		}
+	}
+	.list--headlinesThumbs__desc {
+		margin: 0;
+		line-height: 1.2;
+	}
+}

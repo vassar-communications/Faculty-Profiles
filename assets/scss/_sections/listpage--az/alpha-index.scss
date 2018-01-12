@@ -1,0 +1,58 @@
+.alphaList__nav {
+	overflow: hidden;
+	padding: 0;
+	margin: 2em auto;
+	width: 20em;
+
+	@media (min-width: $medium) {
+		margin: 1em 0;
+	}
+
+	li {
+		background: #eee;
+		float: left;
+		list-style: none;
+		margin: 0;
+		display: inline-block;
+		margin: 0 2px 2px 0;
+		padding: 0.2em 0.4em;
+		text-align: center;
+		width: 1.5em;
+		position: relative;
+		font-size: 1.2em;
+		font-weight: normal;
+		color: #aaa;
+		
+		a {
+			&:visited {
+				color: $burgundy-bright;
+			}
+		}
+		
+		&:hover {
+			background: #aaa;
+			a, a:visited {
+				color: #fff;
+			}
+		}
+		&.item--noLink,
+		&.item--noLink:hover {
+			background: #f9f9f9;
+		}	
+		strong {
+			font-weight: normal;
+		}
+
+		@media (min-width: $medium) {
+			font-size: 1em;
+		}
+		@media (min-width: $large) {
+			font-size: 0.9em;
+			display: inline;
+		}
+		
+		a {
+			@include no-nice-underlines();
+		}
+	}
+}

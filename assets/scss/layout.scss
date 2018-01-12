@@ -1,0 +1,45 @@
+body {
+	max-width: none;
+	margin: 0;
+}
+figcaption {
+	.caption__text,
+	.caption__photocredit {
+		display: block;		
+	}
+}
+
+.inlineList {
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline;
+		list-style: none;
+	}
+}
+.js {
+	.nojs {
+		display: none;
+	}
+}
+.Module {
+	display: none;
+}
+.u-lContent {
+	@media (min-width: $small) {
+		width: 80%;
+	}
+}
+.u-lFooter {
+	margin-top: 4em;
+	float: left;
+	width: 100%;
+}
+.u-NavSite {
+	padding: 0;
+}
+
+#{$LAYOUT__contentContainer} {
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,32 @@
+.page--department {
+		.u-lMain {
+			width: 100%;
+			padding: 0;
+		}
+
+	&.layout1 {
+		.department__info {
+			width: 50%;
+			float: left;
+			padding-right: 3em;
+		}
+		.item__list.list--profiles {
+			width: 50%;
+			float: right;		
+		}
+	}
+	&.layout2 {
+		.item__list.list--profiles {
+			column-count: 2;
+			column-gap: 0.27em;
+		}
+		.item__list .item {
+			overflow: hidden;
+			display: inline-block;
+			border: none;
+			background: #f7f8f9;
+			padding: 1em;
+			padding-right: 0;
+		}
+	}
+}

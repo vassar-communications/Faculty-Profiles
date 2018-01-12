@@ -1,0 +1,58 @@
+.u-pageInner {
+	.u-Masthead__siteName {
+		margin-top: 0;
+		font-family: $serif-display;
+		font-size: 2em;
+	}
+	.u-Masthead {
+		.u-Masthead__vassar {
+			border: none;
+			margin-right: 0.3em;
+			display: none;
+		}
+	}
+}
+
+
+/* .u-pageInner {
+	@media (min-width: $small) {
+		.u-lHeader {
+			padding: 3em 0 1em 0;
+			width: 20%;
+			float: left;
+		}
+		.u-lMain {
+			margin-top: 2.3em;
+			padding: 0 0 0 3rem;
+		}
+		.u-Masthead__siteName {
+			font-size: 1.6em;
+			margin-top: 0;
+			
+			.u-Masthead__siteName--link {
+				&:link, &:visited {
+					color: #000;
+				}
+			}
+		}
+	}
+
+	body {
+		padding-top: 4em;
+	}
+	.u-Masthead__siteName {
+		font-size: 1.6em;
+		font-weight: bold;
+		border-bottom: 1px solid #000;
+	    display: inline-block;
+	    padding-bottom: 0.4em;
+	}
+}
+*/
+
+
+/*	This styling is for horiz nav */
+
+
+
+

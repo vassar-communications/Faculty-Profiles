@@ -1,0 +1,46 @@
+.homepageModule {
+	margin-bottom: 1.6em;
+}
+.homepageModule__row {
+	text-align: center;
+
+	@media screen and (min-width: $large) {
+		text-align: left;
+	}
+}
+.title--homepageModule {
+	margin-bottom: 1em;
+}
+.mod--half {
+	@media screen and (min-width: $large) {
+		width: 50%;
+		float: left;
+		
+		&:first-child {
+			padding-right: 2em;
+		}
+		&:last-child {
+			padding-left: 2em;
+		}
+	}
+}
+.wide {
+	@media screen and (min-width: $small) {
+		width: 54%;
+		float: right;
+	}
+}
+.homepageModule__row {
+	overflow: hidden;
+	padding: 3em;
+
+	@media screen and (min-width: $large) {
+		padding: 3em 8em;
+	}
+}
+.u-Bio__mod {
+	@media (min-width: $medium) {
+		display: block;
+		margin-bottom: 2em;
+	}
+}

@@ -1,0 +1,76 @@
+.u-pageInner {
+	padding: 0;
+
+	#{$LAYOUT__contentContainer} {
+		padding: 0 2rem;
+		position: relative;
+		max-width: 52rem;
+
+		@media (min-width: $small) {
+			margin-top: 2.6em;
+		}
+	}
+	.u-pageTitle {
+		text-align: center;
+
+		@media (min-width: $medium) {
+			text-align: left;
+		}
+	}
+	.u-lHeader {
+		margin-bottom: 2em;
+		overflow: hidden;
+		padding: 6em 0 1em 0;
+
+		@media (min-width: $small) {
+			padding: 1em 0;
+			margin-bottom: 4em;
+		}
+	}
+	.u-Masthead__siteName {
+		padding-top: 0.1em;
+	}
+	.u-lMain {
+		width: 100%;
+		padding: 0;
+		float: none;
+		
+		@media (min-width: $small) {
+			padding-top: 0;
+		}
+	}
+	.u-NavSite {
+		@media (min-width: $medium) {
+			width: 40em;
+			padding: 0 2rem;
+			position: absolute;
+			top: 1.6em;
+			right: 0;
+			text-align: right;
+		}
+	}
+	@media (min-width: $small) and (max-width: $medium) {
+		.u-NavSite {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 58%;
+			
+			.u-NavSite__level--1 {
+				display: flex;
+				flex-wrap: wrap;
+				
+				.u-NavSite__itemContainer {
+					width: 50%;
+				}
+				.u-NavSite__item {
+					padding: 0.2em;
+				}
+			}
+		}
+	}
+
+
+
+
+}
