@@ -27,13 +27,16 @@
 		font-style: italic;
 	}
 	.justfacts__list {
-		overflow: hidden;
 		margin-top: 1em;
 		
 		@extend .noBulletList;
 
 		@media screen and (min-width: $small) {
-			@include multiCols(2);
+			$cols: 2;
+			-webkit-column-count: $cols;
+			-moz-column-count: $cols;
+			column-count: $cols;
+
 
 			.justfacts__listItem {
 				display: block;
