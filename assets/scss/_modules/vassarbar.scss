@@ -1,3 +1,5 @@
+/*	Most of this can go away when the new megamenu is in */
+
 .u-Search {
 	position: absolute;
 	top: 0;
@@ -22,27 +24,37 @@
 }
 
 .vassarbar {
+	position: relative;
+	z-index: 9;
+	
 	.u-Masthead__vassar {
 		.u-Masthead__vassar--link {
 			color: #fff;
 		}
 	}
 }
+.u-lHeader {
+	.u-Masthead__vassar {
+		display: none;
+	}
+}
 
+.ac-NavAnchor.ac-NavAnchor--menu {
+	z-index: 10;
+	
+	&:hover {
+		color: #aaa !important;
+	}
+}
 #navigation:target {
-	z-index: 2;
+	z-index: 11;
 }
 @media (min-width: $small) {
-	.u-lHeader {
-		.u-Masthead__vassar {
-			display: none;
-		}
-	}
 	.vassarbar {
 		background: #882345;
 		padding: 0.6em;
 	    position: relative;
-	    z-index: 9;
+	    z-index: 1;
 	
 		.u-Masthead__vassar {
 			background: #882345;

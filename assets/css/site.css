@@ -147,10 +147,15 @@ p {
 li {
   font: 100 Calluna; }
 
-h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
-  background-image: none;
-  text-shadow: none;
-  color: #333; }
+p {
+  margin-top: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; }
+  h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
+    background-image: none;
+    text-shadow: none;
+    color: #333; }
 
 .ac-hiddenVisually {
   position: absolute;
@@ -235,6 +240,8 @@ h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, 
 .js.searchOpen {
   overflow: hidden;
   border-color: #fff; }
+  .js.searchOpen .ac-NavAnchor--menu {
+    display: none; }
   .js.searchOpen .u-Search, .js.searchOpen .u-Search__form {
     background: transparent; }
   .js.searchOpen .u-lHeader,
@@ -466,6 +473,7 @@ img.gs-image {
     -moz-column-count: 2;
     column-count: 2; } }
 
+/*	Most of this can go away when the new megamenu is in */
 .u-Search {
   position: absolute;
   top: 0;
@@ -484,21 +492,29 @@ img.gs-image {
   .u-Masthead__vassar--link svg {
     display: none; }
 
-.vassarbar .u-Masthead__vassar .u-Masthead__vassar--link {
-  color: #fff; }
+.vassarbar {
+  position: relative;
+  z-index: 9; }
+  .vassarbar .u-Masthead__vassar .u-Masthead__vassar--link {
+    color: #fff; }
+
+.u-lHeader .u-Masthead__vassar {
+  display: none; }
+
+.ac-NavAnchor.ac-NavAnchor--menu {
+  z-index: 10; }
+  .ac-NavAnchor.ac-NavAnchor--menu:hover {
+    color: #aaa !important; }
 
 #navigation:target {
-  z-index: 2; }
+  z-index: 11; }
 
 @media (min-width: 37.5em) {
-  .u-lHeader .u-Masthead__vassar {
-    display: none; }
-
   .vassarbar {
     background: #882345;
     padding: 0.6em;
     position: relative;
-    z-index: 9; }
+    z-index: 1; }
     .vassarbar .u-Masthead__vassar {
       background: #882345; }
     .vassarbar .u-Masthead__vassar--link {
@@ -750,7 +766,7 @@ img.gs-image {
   @media screen and (min-width: 50em) {
     .u-pageHome .u-NavSite {
       background: transparent !important;
-      top: 8rem;
+      top: 7rem;
       right: 1rem; } }
   @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
     .u-pageHome .u-NavSite {
@@ -844,7 +860,8 @@ img.gs-image {
       text-align: left; } }
 
 .title--homepageModule {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  display: block; }
 
 @media screen and (min-width: 62.5em) {
   .mod--half {
