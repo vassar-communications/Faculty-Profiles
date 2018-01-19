@@ -10,8 +10,10 @@
 }
 .title--homepageModule {
 	margin-bottom: 1em;
-	display: block;
+	border-bottom: 1px solid #dcd6c9;
+	padding-bottom: .6em;
 }
+
 .mod--half {
 	@media screen and (min-width: $large) {
 		width: 50%;

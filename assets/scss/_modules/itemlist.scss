@@ -1,10 +1,12 @@
+
+
 .item__list {
 	.item {
-		border-top: 1px solid $gray-border;
+		border-bottom: 1px solid $gray-border;
 		overflow: hidden;
 		padding: 0.6em 0;
 		
-		&:first-child {
+		&:last-child {
 			border: none;
 		}
 

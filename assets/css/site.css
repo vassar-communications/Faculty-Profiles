@@ -585,10 +585,10 @@ img.gs-image {
     margin: 0 0 1em 0; }
 
 .item__list .item {
-  border-top: 1px solid #E8E5DF;
+  border-bottom: 1px solid #E8E5DF;
   overflow: hidden;
   padding: 0.6em 0; }
-  .item__list .item:first-child {
+  .item__list .item:last-child {
     border: none; }
   .item__list .item a {
     border: none; }
@@ -861,7 +861,8 @@ img.gs-image {
 
 .title--homepageModule {
   margin-bottom: 1em;
-  display: block; }
+  border-bottom: 1px solid #dcd6c9;
+  padding-bottom: .6em; }
 
 @media screen and (min-width: 62.5em) {
   .mod--half {
@@ -1071,10 +1072,6 @@ img.gs-image {
     padding-right: 1em;
     display: block;
     transition: all 0.25s ease; }
-.u-pageHome .title--homepageModule {
-  border-bottom: 1px solid #444;
-  display: inline-block;
-  padding-bottom: .6em; }
 .u-pageHome .profile__feature:hover .u-Figure:before {
   border-width: .2em;
   border-color: #963B52; }
@@ -1359,9 +1356,11 @@ img.gs-image {
     display: inline; }
 
 .u-biosInner .figure--image {
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   overflow: hidden;
   padding: 0.3em 0; }
+  .u-biosInner .figure--image:last-child {
+    border: none; }
   .u-biosInner .figure--image figcaption {
     float: right;
     margin: 0;
@@ -1469,9 +1468,9 @@ img.gs-image {
   font-family: Calluna;
   font-weight: 100;
   border-bottom: 1px solid #eee;
-  display: inline-block;
   font-size: 1.6em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  margin-top: 1.2em; }
 
 .u-Bio__section p {
   font: 100 1em/1.3 Calluna; }
@@ -1721,6 +1720,8 @@ img.gs-image {
 
 .page--interests .u-PageNav {
   float: none; }
+.page--interests .list__section h3 {
+  padding-top: 1.2em !important; }
 .page--interests .list--clean .list__item {
   margin: 0.4em 0; }
 
@@ -1780,7 +1781,6 @@ li {
   font-weight: 100; }
 
 h3 {
-  display: inline-block;
   padding-bottom: 0.2em; }
 
 h5 {
