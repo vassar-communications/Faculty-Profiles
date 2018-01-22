@@ -1259,12 +1259,15 @@ img.gs-image {
     .page--profile .u-lAside {
       width: 18%; } }
 
-.u-Bio__details--tabbed .u-Bio__description {
-  border: 1px solid #ccc;
-  padding: 1.6em;
-  width: 100%; }
-.u-Bio__details--tabbed .u-Bio__description--short {
-  overflow: hidden; }
+.u-Bio__details--tabbed {
+  border: none;
+  padding: 0; }
+  .u-Bio__details--tabbed .u-Bio__description {
+    border: none;
+    padding: 0;
+    width: 100%; }
+  .u-Bio__details--tabbed .u-Bio__description--short {
+    overflow: hidden; }
 
 .u-Bio__tablist {
   background: #fff;
@@ -1327,6 +1330,13 @@ img.gs-image {
     @media (min-width: 50em) {
       .u-Bio__tablist .u-Bio__tabLink {
         font-size: 0.7em; } }
+
+.u-Bio__details {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  padding: 1em; }
+  .u-Bio__details .u-Bio__description p:last-child {
+    margin-bottom: 0; }
 
 .u-Bio__contactItemLabel {
   visibility: hidden;

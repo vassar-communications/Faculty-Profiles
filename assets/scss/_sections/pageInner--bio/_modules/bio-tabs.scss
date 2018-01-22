@@ -1,9 +1,15 @@
 $bordercolor: #ccc;
 
+
+
+
 .u-Bio__details--tabbed {
+	border: none;
+	padding: 0;
+	
 	.u-Bio__description {
-	    border: 1px solid $bordercolor;
-	    padding: 1.6em;
+	    border: none;
+	    padding: 0;
 	    width: 100%;
 	}
 	.u-Bio__description--short {
