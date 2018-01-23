@@ -7,11 +7,10 @@
 	
 	a {
 		border: none;
-		@include no-nice-underlines();
+/*		@include no-nice-underlines(); */
 	}
 	.u-Bio__contactItem {
 		list-style-type: none;
-		margin-bottom: 0;
 		padding: .04em 0;
 	}
 	.u-Bio__contactItemLabel--box {

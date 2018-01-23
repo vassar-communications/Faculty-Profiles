@@ -107,7 +107,7 @@ $BASICSTYLE__selection-color: #ff0;
 a:link {
   color: #ce1e46; }
 a:visited {
-  color: #935966; }
+  color: #9a8d90; }
 a:hover, a:visited:hover {
   color: #000; }
 
@@ -663,6 +663,32 @@ img.gs-image {
 .ac-NavAnchor--top svg {
   height: auto; }
 
+.u-lFooter a {
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+  text-decoration: none;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#aaa, #aaa);
+  background-size: .05em 1px, .05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x; }
+  .u-lFooter a else {
+    background-position: 0% 1.1em, 100% 1.1em, 0% 1.1em; }
+  .u-lFooter a:before, .u-lFooter a:after, .u-lFooter a *, .u-lFooter a *:before, .u-lFooter a *:after {
+    text-shadow: none; }
+  .u-lFooter a::-moz-selection {
+    background-image: none;
+    text-shadow: none;
+    background: #ccc; }
+  .u-lFooter a::selection {
+    background-image: none;
+    text-shadow: none;
+    background: #ccc; }
+  .u-lFooter a:link {
+    color: #ce1e46; }
+  .u-lFooter a:visited {
+    color: #9a8d90; }
+  .u-lFooter a:hover, .u-lFooter a:visited:hover {
+    color: #000; }
+  .u-lFooter a:active, .u-lFooter a:visited:active {
+    color: #000; }
 .u-lFooter .u-VCard__label {
   font-size: 0.8em;
   font-weight: normal;
@@ -1346,11 +1372,9 @@ img.gs-image {
   margin: 0 !important; }
   .u-Bio__contactInfo a {
     border: none;
-    background-image: none;
-    text-shadow: none; }
+    /*		@include no-nice-underlines(); */ }
   .u-Bio__contactInfo .u-Bio__contactItem {
     list-style-type: none;
-    margin-bottom: 0;
     padding: .04em 0; }
   .u-Bio__contactInfo .u-Bio__contactItemLabel--box {
     position: static;
@@ -1628,6 +1652,10 @@ img.gs-image {
       font-size: 1.2em; }
 
 /*	This module overrides styling in _modules/itemlist. */
+.list--profiles .item:hover .item__link,
+.list--profiles .item:hover .item__link:visited,
+.list--profiles .item:hover .subtitle {
+  color: #ce1e46 !important; }
 .list--profiles .item .item__image {
   float: none;
   margin-right: 0;

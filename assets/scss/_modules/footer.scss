@@ -1,4 +1,8 @@
 .u-lFooter {
+	a {
+		@include very-nice-underlines(#aaa, #fff, 1.1em);
+		@include linkColors($BASICSTYLE__link-color, $BASICSTYLE__link-color--visited, $BASICSTYLE__link-color--hover, #000);
+	}
 	.u-VCard__label {
 		font-size: 0.8em;
 		font-weight: normal;
