@@ -9,21 +9,22 @@
 		}
 		
 		figcaption {
-			float: right;
+			// float: right;
+			// width: calc(100% - 9em);
 			margin: 0;
-			width: calc(100% - 9em);
 		}
 	}	
 	.profilephoto__imagelink {
 		display: inline-block;
 		transition: all ease 0.4s;
-		width: 7em;
-		float: left;
-		max-height: 7em;
-	    overflow: hidden;
+		// width: 7em;
+		// float: left;
+		// max-height: 7em;
+	    // overflow: hidden;
+
+		width: 14em;
 	}
 }
-
 .u-Bio__section#photos {
 	& > p {
 		font: normal 0.85em/1.3 $sans-serif;

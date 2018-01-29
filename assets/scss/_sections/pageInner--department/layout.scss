@@ -1,8 +1,15 @@
 .page--department {
-		.u-lMain {
-			width: 100%;
-			padding: 0;
-		}
+	
+	.department__sitelink {
+		display: inline-block;
+		font-family: $sans-serif;
+		margin: 2em 0 1em 0;
+		@include linkColors($BASICSTYLE__link-color, $BASICSTYLE__link-color--visited, $BASICSTYLE__link-color--hover, #000);
+	}
+	.u-lMain {
+		width: 100%;
+		padding: 0;
+	}
 
 	&.layout1 {
 		.department__info {

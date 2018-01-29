@@ -73,6 +73,8 @@
 			    }
 		    }
 			.feature__link {
+				@include no-nice-underlines();
+				
 				&:link, &:visited {
 					color: #000;
 				}

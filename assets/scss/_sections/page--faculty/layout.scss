@@ -5,6 +5,7 @@
 	    .item__name {
 		    font-family: $serif;
 		    margin: 0;
+		    display: inline-block;
 	    }
 	    .item__title,
 		.item__degrees {
@@ -12,10 +13,19 @@
 		    line-height: 1.25;
 		    margin: 0;
 		    padding-right: 0.6em;
+		    color: #5a5a5a;
 	    }
+		.item__degrees {
+		    font-size: 0.85em;
+		    margin-top: 0.3em;
+		}
+		.item__title {
+			margin-top: 0.2em;
+		}
+
 	}
 	.item__link {
-		@include linkColors(#000, #777, $burgundy-bright, $burgundy-bright);
+		/* @include linkColors(#000, #777, $burgundy-bright, $burgundy-bright); */
 		
 		strong {
 			display: block;

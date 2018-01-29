@@ -1,4 +1,7 @@
 .alphaList__nav {
+	display: flex;
+	flex-wrap: wrap;
+	
 	overflow: hidden;
 	padding: 0;
 	margin: 2em auto;
@@ -15,7 +18,7 @@
 		margin: 0;
 		display: inline-block;
 		margin: 0 2px 2px 0;
-		padding: 0.2em 0.4em;
+		padding: 0.2em 0;
 		text-align: center;
 		width: 1.5em;
 		position: relative;
@@ -24,6 +27,8 @@
 		color: #aaa;
 		
 		a {
+			padding: 0.4em;
+
 			&:visited {
 				color: $burgundy-bright;
 			}

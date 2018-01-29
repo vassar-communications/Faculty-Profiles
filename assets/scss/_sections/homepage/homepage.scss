@@ -6,10 +6,7 @@
 	body {
 		max-width: none;
 	}
-	a {
-		@include no-nice-underlines();
-	}
-	.body-container {
+	#{$LAYOUT__contentContainer} {
 		border: 0.6em solid #fff;
 	}
 	.u-lHeader,

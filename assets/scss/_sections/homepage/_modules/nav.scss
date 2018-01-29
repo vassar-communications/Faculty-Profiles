@@ -2,6 +2,10 @@
 	.u-NavSite {
 		top: 6em;
 		
+		.u-NavSite__item {
+			@include no-nice-underlines();
+		}
+		
 		@media screen and (min-width: $small) {
 		    position: absolute;
 		    right: 1em;
@@ -17,7 +21,7 @@
 		}
 		@media screen and (min-width: $medium) {
 			background: transparent !important;
-			top: 7rem;
+			top: 2rem;
 			right: 1rem;
 		}
 		/* Fixes layout issues in IE11 */

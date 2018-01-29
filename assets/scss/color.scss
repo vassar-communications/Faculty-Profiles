@@ -1,7 +1,11 @@
-a {
-	border: none;
-	@include very-nice-underlines(#aaa, #fff, 1.1em);
-    background-position: 0 1.15em;
+#{$LAYOUT__contentContainer} {
+}
+.u-lMain {
+	a {
+		border: none;
+		@include very-nice-underlines(#aaa, #fff, 1.1em);
+	    background-position: 0 1.15em;
+	}
 }
 .u-NavSite:focus {
     outline: none;
@@ -9,7 +13,6 @@ a {
 .u-Masthead__vassar--link,
 .u-NavSite__item,
 .u-Masthead__siteName--link,
-.u-lFooter a,
 .ac-NavAnchor {
 	@include no-nice-underlines();
 }

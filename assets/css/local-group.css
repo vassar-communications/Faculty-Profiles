@@ -536,8 +536,11 @@ img.gs-image {
 .u-Masthead__vassar {
   font-size: 1.8rem !important; }
 
-.u-Masthead__siteName--link:hover, .u-Masthead__siteName--link:visited:hover {
-  color: #ce1e46; }
+.u-Masthead__siteName--link {
+  background-image: none;
+  text-shadow: none; }
+  .u-Masthead__siteName--link:hover, .u-Masthead__siteName--link:visited:hover {
+    color: #ce1e46; }
 
 .u-Bio__list {
   padding-left: 0;
@@ -649,6 +652,9 @@ img.gs-image {
 .mod--websites .u-Bio__listItem:last-child:after {
   content: none; }
 
+.list--tags .u-Bio__listItem:after {
+  content: ";"; }
+
 .body-container .u-Search {
   display: none; }
 
@@ -663,12 +669,17 @@ img.gs-image {
 .ac-NavAnchor--top svg {
   height: auto; }
 
+.u-NavSite__item {
+  background-image: none;
+  text-shadow: none; }
+
 .u-lFooter a {
   text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
   text-decoration: none;
   background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#aaa, #aaa);
   background-size: .05em 1px, .05em 1px, 1px 1px;
-  background-repeat: no-repeat, no-repeat, repeat-x; }
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0 1.15em; }
   .u-lFooter a else {
     background-position: 0% 1.1em, 100% 1.1em, 0% 1.1em; }
   .u-lFooter a:before, .u-lFooter a:after, .u-lFooter a *, .u-lFooter a *:before, .u-lFooter a *:after {
@@ -693,15 +704,14 @@ img.gs-image {
   font-size: 0.8em;
   font-weight: normal;
   text-transform: uppercase; }
+.u-lFooter .u-VCard__org {
+  display: inline-block; }
 
 .u-pageHome, .u-pageHome body {
   padding: 0; }
 .u-pageHome body {
   max-width: none; }
-.u-pageHome a {
-  background-image: none;
-  text-shadow: none; }
-.u-pageHome .body-container {
+.u-pageHome .PageContent, .u-pageHome .body-container {
   border: 0.6em solid #fff; }
 .u-pageHome .u-lHeader,
 .u-pageHome .profile__features {
@@ -758,7 +768,9 @@ img.gs-image {
   .u-pageHome .u-Masthead__siteName--link {
     color: #000;
     font-family: Calluna;
-    font-weight: 100; }
+    font-weight: 100;
+    background-image: none;
+    text-shadow: none; }
   .u-pageHome .u-Masthead__siteName:after {
     display: none; }
 
@@ -776,6 +788,9 @@ img.gs-image {
 .u-pageHome .u-NavSite {
   top: 6em;
   /* Fixes layout issues in IE11 */ }
+  .u-pageHome .u-NavSite .u-NavSite__item {
+    background-image: none;
+    text-shadow: none; }
   @media screen and (min-width: 37.5em) {
     .u-pageHome .u-NavSite {
       position: absolute;
@@ -792,7 +807,7 @@ img.gs-image {
   @media screen and (min-width: 50em) {
     .u-pageHome .u-NavSite {
       background: transparent !important;
-      top: 7rem;
+      top: 2rem;
       right: 1rem; } }
   @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
     .u-pageHome .u-NavSite {
@@ -859,7 +874,7 @@ img.gs-image {
     font-size: 5em; }
     @media screen and (min-width: 62.5em) {
       .justfacts .fact__fact {
-        font-size: 6em; } }
+        font-size: 5em; } }
   .justfacts .fact__title {
     margin: 0;
     font-weight: 100;
@@ -916,6 +931,13 @@ img.gs-image {
     display: block;
     margin-bottom: 2em; } }
 
+/*	This is stopgap styling - I'll need a class on the slideshow area */
+@media screen and (min-width: 62.5em) {
+  .homepageModule__row .mod--half {
+    width: 60%; }
+  .homepageModule__row .justfacts.mod--half {
+    width: 40%; } }
+
 .questions__list {
   padding: 2em 0 1em 0;
   text-align: center; }
@@ -952,7 +974,7 @@ img.gs-image {
     height: 0.7rem;
     display: inline-block;
     overflow: hidden;
-    text-indent: 0;
+    text-indent: -900px;
     color: transparent; }
     .questions__nav .questions__tabLink:hover {
       background: #d5cfc2; }
@@ -1033,8 +1055,11 @@ img.gs-image {
     position: relative;
     z-index: 2;
     padding-left: .6em; }
-  .u-pageHome .profile__features .profile__feature .feature__link:link, .u-pageHome .profile__features .profile__feature .feature__link:visited {
-    color: #000; }
+  .u-pageHome .profile__features .profile__feature .feature__link {
+    background-image: none;
+    text-shadow: none; }
+    .u-pageHome .profile__features .profile__feature .feature__link:link, .u-pageHome .profile__features .profile__feature .feature__link:visited {
+      color: #000; }
   .u-pageHome .profile__features .profile__feature img {
     border: 1px solid #ccc; }
   .u-pageHome .profile__features .profile__feature .u-Figure {
@@ -1125,12 +1150,12 @@ img.gs-image {
 
 .u-pageInner {
   padding: 0; }
-  .u-pageInner .body-container {
+  .u-pageInner .PageContent, .u-pageInner .body-container {
     padding: 0 2rem;
     position: relative;
     max-width: 52rem; }
     @media (min-width: 37.5em) {
-      .u-pageInner .body-container {
+      .u-pageInner .PageContent, .u-pageInner .body-container {
         margin-top: 2.6em; } }
   .u-pageInner .u-pageTitle {
     text-align: center; }
@@ -1218,8 +1243,10 @@ img.gs-image {
 	a page which uses this, add its class to the selector below (or add the
 	"page--hasStickySideNav" class to the HTML tag).
 */
-.page--hasStickySideNav .body-container,
+.page--hasStickySideNav .PageContent, .page--hasStickySideNav .body-container,
+.page--interests .PageContent,
 .page--interests .body-container,
+.page--profile .PageContent,
 .page--profile .body-container {
   max-width: 62rem; }
 @media (min-width: 50em) {
@@ -1396,16 +1423,11 @@ img.gs-image {
   .u-biosInner .figure--image:last-child {
     border: none; }
   .u-biosInner .figure--image figcaption {
-    float: right;
-    margin: 0;
-    width: calc(100% - 9em); }
+    margin: 0; }
 .u-biosInner .profilephoto__imagelink {
   display: inline-block;
   transition: all ease 0.4s;
-  width: 7em;
-  float: left;
-  max-height: 7em;
-  overflow: hidden; }
+  width: 14em; }
 
 .u-Bio__section#photos > p {
   font: normal 0.85em/1.3 "ff-basic-gothic-web-pro";
@@ -1453,7 +1475,7 @@ img.gs-image {
       padding: 1em 0; }
       .u-PageNav .u-PageNav__itemContainer {
         width: 33%; } }
-  .u-PageNav a {
+  .u-PageNav .u-PageNav__itemContainer .u-PageNav__item {
     background-image: none;
     text-shadow: none;
     color: #000;
@@ -1462,9 +1484,9 @@ img.gs-image {
     font-weight: normal;
     font-size: 0.9em;
     padding: 0.2em; }
-    .u-PageNav a:hover {
+    .u-PageNav .u-PageNav__itemContainer .u-PageNav__item:hover {
       background: #F2EFE9; }
-  .u-PageNav .current {
+  .u-PageNav .u-PageNav__itemContainer.current .u-PageNav__item {
     background: #F2EFE9; }
 
 .page--profile .onleave {
@@ -1560,6 +1582,8 @@ img.gs-image {
   margin-top: 2em; }
 
 .alphaList__nav {
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
   padding: 0;
   margin: 2em auto;
@@ -1574,15 +1598,17 @@ img.gs-image {
     margin: 0;
     display: inline-block;
     margin: 0 2px 2px 0;
-    padding: 0.2em 0.4em;
+    padding: 0.2em 0;
     text-align: center;
     width: 1.5em;
     position: relative;
     font-size: 1.2em;
     font-weight: normal;
     color: #aaa; }
-    .alphaList__nav li a:visited {
-      color: #ce1e46; }
+    .alphaList__nav li a {
+      padding: 0.4em; }
+      .alphaList__nav li a:visited {
+        color: #ce1e46; }
     .alphaList__nav li:hover {
       background: #aaa; }
       .alphaList__nav li:hover a, .alphaList__nav li:hover a:visited {
@@ -1699,14 +1725,18 @@ img.gs-image {
   .list--profiles .item .list--tags .u-Bio__listItem__link {
     font-size: 0.7em; }
 
-.department__sitelink {
-  background-image: none;
-  display: block;
+.page--department .department__sitelink {
+  display: inline-block;
   font-family: "ff-basic-gothic-web-pro";
-  padding: 2em 0 1em 0; }
-  .department__sitelink:visited {
-    color: #a70240; }
-
+  margin: 2em 0 1em 0; }
+  .page--department .department__sitelink:link {
+    color: #ce1e46; }
+  .page--department .department__sitelink:visited {
+    color: #9a8d90; }
+  .page--department .department__sitelink:hover, .page--department .department__sitelink:visited:hover {
+    color: #000; }
+  .page--department .department__sitelink:active, .page--department .department__sitelink:visited:active {
+    color: #000; }
 .page--department .u-lMain {
   width: 100%;
   padding: 0; }
@@ -1735,23 +1765,24 @@ img.gs-image {
   margin-bottom: 0.9em; }
   .page--faculty .list__item .item__name {
     font-family: Calluna;
-    margin: 0; }
+    margin: 0;
+    display: inline-block; }
   .page--faculty .list__item .item__title,
   .page--faculty .list__item .item__degrees {
     font-size: 1em;
     line-height: 1.25;
     margin: 0;
-    padding-right: 0.6em; }
-.page--faculty .item__link:link {
-  color: #000; }
-.page--faculty .item__link:visited {
-  color: #777; }
-.page--faculty .item__link:hover, .page--faculty .item__link:visited:hover {
-  color: #ce1e46; }
-.page--faculty .item__link:active, .page--faculty .item__link:visited:active {
-  color: #ce1e46; }
-.page--faculty .item__link strong {
-  display: block; }
+    padding-right: 0.6em;
+    color: #5a5a5a; }
+  .page--faculty .list__item .item__degrees {
+    font-size: 0.85em;
+    margin-top: 0.3em; }
+  .page--faculty .list__item .item__title {
+    margin-top: 0.2em; }
+.page--faculty .item__link {
+  /* @include linkColors(#000, #777, $burgundy-bright, $burgundy-bright); */ }
+  .page--faculty .item__link strong {
+    display: block; }
 
 .u-folderResearch-interests.page--list .u-pageTitle {
   margin-bottom: 0.6em; }
@@ -1800,7 +1831,7 @@ figcaption .caption__photocredit {
 .u-NavSite {
   padding: 0; }
 
-.body-container {
+.PageContent, .body-container {
   margin-left: auto;
   margin-right: auto; }
 
@@ -1896,7 +1927,7 @@ figcaption {
   letter-spacing: .03em;
   font-weight: bold; }
 
-a {
+.u-lMain a {
   border: none;
   text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
   text-decoration: none;
@@ -1904,15 +1935,15 @@ a {
   background-size: .05em 1px, .05em 1px, 1px 1px;
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-position: 0 1.15em; }
-  a else {
+  .u-lMain a else {
     background-position: 0% 1.1em, 100% 1.1em, 0% 1.1em; }
-  a:before, a:after, a *, a *:before, a *:after {
+  .u-lMain a:before, .u-lMain a:after, .u-lMain a *, .u-lMain a *:before, .u-lMain a *:after {
     text-shadow: none; }
-  a::-moz-selection {
+  .u-lMain a::-moz-selection {
     background-image: none;
     text-shadow: none;
     background: #ccc; }
-  a::selection {
+  .u-lMain a::selection {
     background-image: none;
     text-shadow: none;
     background: #ccc; }
@@ -1923,7 +1954,6 @@ a {
 .u-Masthead__vassar--link,
 .u-NavSite__item,
 .u-Masthead__siteName--link,
-.u-lFooter a,
 .ac-NavAnchor {
   background-image: none;
   text-shadow: none; }

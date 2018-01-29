@@ -47,3 +47,29 @@
 		margin-bottom: 2em;
 	}
 }
+
+
+/*	This is stopgap styling - I'll need a class on the slideshow area */
+
+.homepageModule__row {
+	@media screen and (min-width: $large) {
+		.mod--half {
+			width: 60%;
+		}
+		.justfacts.mod--half {
+			width: 40%;		
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

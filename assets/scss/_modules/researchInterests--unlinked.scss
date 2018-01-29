@@ -1,0 +1,7 @@
+.list--tags {
+	.u-Bio__listItem {
+		&:after {
+			content: ";";
+		}
+	}
+}

@@ -17,6 +17,8 @@
 		color: $homepage-textcolor;
 		font-family: $serif;
 		font-weight: 100;
+
+		@include no-nice-underlines();
 	}
 	.u-Masthead__siteName:after {
 		display: none;

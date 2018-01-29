@@ -17,24 +17,24 @@
 			
 			
 		}
-	
-		a {
-			@include no-nice-underlines();
-			
-			color: #000;
-			display: block;
-			font-family: $sans-serif;
-			font-weight: normal;
-			font-size: 0.9em;
-			padding: 0.2em;
-			
-			&:hover {
+		.u-PageNav__itemContainer {
+			.u-PageNav__item {
+				@include no-nice-underlines();
+				
+				color: #000;
+				display: block;
+				font-family: $sans-serif;
+				font-weight: normal;
+				font-size: 0.9em;
+				padding: 0.2em;
+				
+				&:hover {
+					background: $gray-bg;
+				}
+			}
+			&.current .u-PageNav__item {
 				background: $gray-bg;
 			}
-		}
-		
-		.current {
-			background: $gray-bg;
 		}
 	}
 // }

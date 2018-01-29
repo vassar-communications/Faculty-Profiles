@@ -1,6 +1,8 @@
 
 
 .u-Masthead__siteName--link {
+	@include no-nice-underlines();
+
 	&:hover, &:visited:hover {
 		color: #ce1e46;
 	}
