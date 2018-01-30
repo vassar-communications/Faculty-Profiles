@@ -1,10 +1,4 @@
 .u-pageHome {
-	
-	a {
-		color: $burgundy-1;
-		border: none;
-	}
-	
 	.profile__features {
 		& {
 			overflow: hidden;
@@ -46,30 +40,33 @@
 				}
 			}
 
-			&:hover {
-				.feature__link {
-					&:link, &:visited {
-						color: #fff;
-					}
-				}
-				.subtitle {
-					color: #c3bdaf !important;
-					opacity: 1;
-				}
 
-				.u-Figure:before {
-					border-width: .2em;
-				}
-			    .feature__title {
-				    &:before {
-					    height: 100%;
+			&:hover {
+				@media screen and (min-width: $small) {
+					.feature__link {
+						&:link, &:visited {
+							color: #fff;
+						}
+					}
+					.subtitle {
+						color: #c3bdaf !important;
+						opacity: 1;
+					}
+	
+					.u-Figure:before {
+						border-width: .2em;
+					}
+				    .feature__title {
+					    &:before {
+						    height: 100%;
+					    }
 				    }
-			    }
-			    .feature__link {
-				    color: $homepage-textcolor;
-				    position: relative;
-				    z-index: 2;
-				    padding-left: .6em;
+				    .feature__link {
+					    color: $homepage-textcolor;
+					    position: relative;
+					    z-index: 2;
+					    padding-left: .6em;
+				    }
 			    }
 		    }
 			.feature__link {

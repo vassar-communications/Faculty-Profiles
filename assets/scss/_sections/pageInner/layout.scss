@@ -40,7 +40,7 @@
 		}
 	}
 	.u-NavSite {
-		@media (min-width: $medium) {
+		@media (min-width: $small) {
 			width: 40em;
 			padding: 0 2rem;
 			position: absolute;
@@ -49,6 +49,8 @@
 			text-align: right;
 		}
 	}
+
+/*
 	@media (min-width: $small) and (max-width: $medium) {
 		.u-NavSite {
 			position: absolute;
@@ -69,7 +71,7 @@
 			}
 		}
 	}
-
+*/
 
 
 

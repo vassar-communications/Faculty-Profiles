@@ -3,11 +3,20 @@
 .list--profiles {
 	.item {
 		&:hover {
-			.item__link,
+
+			/* .item__link,
 			.item__link:visited,
 			.subtitle {
 				color: #ce1e46 !important;
+			} */
+
+			*, *:visited {
+				color: #ce1e46 !important;
 			}
+			
+		}
+		.profile__degrees {
+		    margin-bottom: 0.4em !important;			
 		}
 		.item__image {
 			// width: 16%;
@@ -16,6 +25,9 @@
 			width: 100%;
 		}
 		.item__title {
+			.maintitle {
+				color: $burgundy-bright;
+			}
 			.subtitle {
 				width: 90%;	
 			}			
@@ -42,7 +54,7 @@
 		.item__link {
 			&.link--degrees {
 				background-image: none;
-				font-size: 0.9em;
+				/* font-size: 0.9em; */
 				line-height: 1.2;
 				display: block;
 			}
@@ -51,7 +63,7 @@
 				display: inline-block;
 				width: 20%;
 				overflow: hidden;
-				max-height: 7.4em;	
+				max-height: 8.4em;	
 
 				@media (min-width: $small) {
 					width: 16%;					
@@ -59,8 +71,6 @@
 			}
 		}
 		.list--tags {
-			margin-top: 0.3em;
-
 			.u-Bio__listItem {
 				padding: 0.05em 0;
 			}

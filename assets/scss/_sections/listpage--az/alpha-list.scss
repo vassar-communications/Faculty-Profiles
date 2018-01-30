@@ -10,6 +10,17 @@
 		strong {
 			font-weight: normal;
 		}
+		&:hover {
+			*, *:visited {
+				color: $burgundy-bright !important;
+			}
+		}
+	}
+	.list__item {
+		.item__title {
+			font-style: italic;
+			color: #888;
+		}
 	}
 	.list__section {
 		overflow: hidden;

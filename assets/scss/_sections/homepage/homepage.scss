@@ -1,5 +1,9 @@
 .u-pageHome {
 	
+	.PageContent {
+	    background: none;
+	    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAALElEQVQYV2NkwAKe3T/1nxFdHCQopWjGiCIBEwQphksgC8Il0AXBEtgEQRIAyTMXlUUwv28AAAAASUVORK5CYII=) repeat;
+	}
 	&, body {
 		padding: 0;
 	}
@@ -9,11 +13,14 @@
 	#{$LAYOUT__contentContainer} {
 		border: 0.6em solid #fff;
 	}
+	/*
 	.u-lHeader,
 	.profile__features {
 	    background: none;
 	    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAALElEQVQYV2NkwAKe3T/1nxFdHCQopWjGiCIBEwQphksgC8Il0AXBEtgEQRIAyTMXlUUwv28AAAAASUVORK5CYII=) repeat;
+	    background-attachment: fixed;
 	}
+	*/
 	.u-lContent,
 	.u-lMain,
 	.u-NavSite {
@@ -28,6 +35,9 @@
 		@media screen and (min-width: $large) {
 			padding: 0 8em;
 		}
+	}
+	.homepageModule__row {
+		background: #fff;
 	}
 }
 @import "_modules/all";
