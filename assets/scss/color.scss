@@ -4,7 +4,7 @@
 	a {
 		border: none;
 		@include very-nice-underlines(#aaa, #fff, 1.1em);
-	    background-position: 0 1.15em;
+	    background-position: 0 1.12em;
 	}
 }
 .u-NavSite:focus {
@@ -32,7 +32,6 @@
 	    color: #888;
 	}
 }
-
 figcaption {
 	.caption__text {
 		color: #444;
@@ -41,7 +40,6 @@ figcaption {
 		color: #aaa;
 	}
 }
-
 .u-NavSite__itemContainer {
 	.u-NavSite__item {
 		&:link, &:visited {
@@ -49,6 +47,9 @@ figcaption {
 		}
 		&:hover, &:visited:hover {
 			color: $burgundy-bright;
+		}
+		&:active, &:visited:active {
+			color: $BASICSTYLE__link-color--active;
 		}
 	}
 	.u-NavSite__item--isCurrent {
@@ -58,3 +59,6 @@ figcaption {
 		font-weight: bold;
 	}
 }
+
+
+

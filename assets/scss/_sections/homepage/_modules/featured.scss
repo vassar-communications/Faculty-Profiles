@@ -42,21 +42,27 @@
 
 
 			&:hover {
+				.feature__title {
+					background: $burgundy-2;
+					
+				}
+				.feature__link {
+					&:link, &:visited {
+						color: #fff;
+					}
+				}
+				.subtitle {
+					color: #c3bdaf !important;
+					opacity: 1;
+				}
+
 				@media screen and (min-width: $small) {
-					.feature__link {
-						&:link, &:visited {
-							color: #fff;
-						}
-					}
-					.subtitle {
-						color: #c3bdaf !important;
-						opacity: 1;
-					}
-	
 					.u-Figure:before {
 						border-width: .2em;
 					}
 				    .feature__title {
+					    background: none;
+					    
 					    &:before {
 						    height: 100%;
 					    }
@@ -106,9 +112,12 @@
 				    height: 100%;
 				    width: 100%;
 				    border: 0px solid $homepage-textcolor;
-				    border-bottom: none;
 					transition: all 0.25s ease;
 					z-index: 10;
+
+					@media screen and (min-width: $medium) {
+					    border-bottom: none;
+					}
 			    }
 			    
 			    img {

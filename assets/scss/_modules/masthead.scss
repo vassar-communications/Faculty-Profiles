@@ -6,6 +6,9 @@
 	&:hover, &:visited:hover {
 		color: #ce1e46;
 	}
+	&:active, &:visited:active {
+		color: $BASICSTYLE__link-color--active;
+	}
 }
 
 @media (min-width: $small) {

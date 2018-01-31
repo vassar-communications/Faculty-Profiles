@@ -31,4 +31,15 @@
 		color: #777;
 		margin-top: 2em;
 	}
+	.figure--image {
+		border: none;
+		padding: 0;
+		margin: 1em;
+	}
+	.row {
+		/* column-count: 2;
+		-webkit-column-count: 2;
+		-moz-column-count: 2; */
+		display: flex;
+	}
 }

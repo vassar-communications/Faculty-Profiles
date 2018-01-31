@@ -1,8 +1,7 @@
 .u-lFooter {
 	a {
-		@include very-nice-underlines(#aaa, #fff, 1.1em);
-		@include linkColors($BASICSTYLE__link-color, $BASICSTYLE__link-color--visited, $BASICSTYLE__link-color--hover, #000);
-		background-position: 0 1.15em;
+		@include very-nice-underlines(#aaa, #fff);
+		@include linkColors($BASICSTYLE__link-color, $BASICSTYLE__link-color--visited, $BASICSTYLE__link-color--hover, $BASICSTYLE__link-color--active);
 	}
 	.u-VCard__label {
 		display: none;

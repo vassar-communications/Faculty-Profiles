@@ -2,18 +2,31 @@
 
 .list--profiles {
 	.item {
-		&:hover {
-
-			/* .item__link,
-			.item__link:visited,
-			.subtitle {
-				color: #ce1e46 !important;
-			} */
-
-			*, *:visited {
-				color: #ce1e46 !important;
+		.item__link {
+			&:link {
+				.item__title {
+					.maintitle {
+						color: $BASICSTYLE__link-color;
+					}
+				}
 			}
-			
+			&:visited {
+				.item__title {
+					.maintitle {
+						color: $BASICSTYLE__link-color--visited;
+					}
+				}
+			}
+			&:hover {
+				*, *:visited {
+					color: $BASICSTYLE__link-color !important;
+				}
+			}
+			&:active {
+				*, *:visited {
+					color: $BASICSTYLE__link-color--active !important;
+				}
+			}
 		}
 		.profile__degrees {
 		    margin-bottom: 0.4em !important;			
@@ -25,13 +38,12 @@
 			width: 100%;
 		}
 		.item__title {
-			.maintitle {
-				color: $burgundy-bright;
-			}
 			.subtitle {
 				width: 90%;	
 			}			
 		}
+
+
 		.item__title,
 		.item__content {
 			border: none;
@@ -80,3 +92,26 @@
 		}
 	}
 }
+
+.item__title .maintitle {
+	@include very-nice-underlines(#aaa, #fff);	
+}
+.item__list .item .item__title .maintitle {
+    display: inline-block;
+    background-position: 0 1.1em;
+}
+
+/*	This is for the version where one link contains all content. CSS above is for the version where each component had its own link, allowing for research interest tags with separate links. */
+
+.list--profiles {
+	.item {
+		.item__imageContainer {
+			float: left;
+			max-height: 9em;
+			overflow: hidden;
+			width: 16%;
+		}
+	}
+}
+
+
