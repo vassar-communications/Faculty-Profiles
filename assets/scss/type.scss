@@ -20,6 +20,9 @@ h5 {
 	letter-spacing: 0.06em;	
 	text-transform: uppercase;
 }
+strong {
+	font-weight: bold;
+}
 .u-pageTitle {
 	margin: 0;
 	font-family: $serif;
@@ -104,9 +107,9 @@ figcaption {
 }
 
 .smallcapsTitle {
-	font-size: .9rem;
+	font-size: 0.9em;
 	font-family: $sans-serif;
 	text-transform: uppercase;
-	letter-spacing: .03em;
+	letter-spacing: 0.03em;
 	font-weight: bold;
 }

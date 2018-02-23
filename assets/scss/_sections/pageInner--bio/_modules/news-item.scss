@@ -1,0 +1,31 @@
+.u-Bio__section#stories {
+	.item__title {
+		color: #ce1e46;
+		@include very-nice-underlines(#ccc, #fff);
+		background-position-y: 1.15em;
+		display: inline-block;
+		width: auto;
+		float: none;
+	}
+	.item__link {
+		display: block;
+		overflow: hidden;
+    
+		img {
+			transition: all ease 0.4s;
+		}
+		&:hover {
+			img {
+				opacity: 0.6;
+			}
+			.item__title {
+				color: #5a5a5a;
+			}
+		}
+		&:active {
+			* {
+				color: #f00 !important;
+			}
+		}
+	}
+}

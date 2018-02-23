@@ -7,7 +7,7 @@
 .page--interests,
 .page--profile {
 	#{$LAYOUT__contentContainer} {
-		max-width: 62rem;
+		max-width: 62em;
 	}
 	.u-pageTitle {
 		@media (min-width: $medium) {

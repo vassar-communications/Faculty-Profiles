@@ -1,5 +1,9 @@
 .page--faculty {
 	.list__item {
+		.item__title {
+		}
+	}
+	.list__item {
 	    margin-bottom: 0.9em;
 	    
 	    .item__name {
@@ -20,7 +24,9 @@
 		    margin-top: 0.3em;
 		}
 		.item__title {
-			margin-top: 0.2em;
+			font-style: italic;
+			color: #888;
+			font-size: 0.9em;
 		}
 
 	}

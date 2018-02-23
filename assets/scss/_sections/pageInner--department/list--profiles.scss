@@ -42,8 +42,6 @@
 				width: 90%;	
 			}			
 		}
-
-
 		.item__title,
 		.item__content {
 			border: none;
@@ -94,7 +92,7 @@
 }
 
 .item__title .maintitle {
-	@include very-nice-underlines(#aaa, #fff);	
+	@include very-nice-underlines(#aaa, #fff);
 }
 .item__list .item .item__title .maintitle {
     display: inline-block;

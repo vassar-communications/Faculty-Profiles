@@ -7,3 +7,12 @@
 		font-size: calc(0.55em + 0.5 * ((100vw - 20em) / 60));
 	}
 }
+
+.g-Search__submit svg {
+    width: 50% !important;
+}
+@media screen and (min-width: $small) {
+	.g-Search__submit svg {
+	    width: 50% !important;
+	}
+}

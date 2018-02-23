@@ -2,9 +2,9 @@
 	padding: 0;
 
 	#{$LAYOUT__contentContainer} {
-		padding: 0 2rem;
+		padding: 0 2em;
 		position: relative;
-		max-width: 52rem;
+		max-width: 52em;
 
 		@media (min-width: $small) {
 			margin-top: 2.6em;
