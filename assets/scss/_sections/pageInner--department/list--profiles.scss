@@ -103,6 +103,9 @@
 
 .list--profiles {
 	.item {
+		.item__title {
+			max-width: none;
+		}
 		.item__imageContainer {
 			float: left;
 			max-height: 9em;

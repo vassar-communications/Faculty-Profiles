@@ -33,13 +33,16 @@
 	.figure--image {
 		border: none;
 		padding: 0;
-		margin: 1em;
-		margin-left: 0;
+
+		@media (min-width: $small) {
+			margin: 1em;
+			margin-left: 0;
+			width: 50%;
+		}
 	}
 	.row {
-		/* column-count: 2;
-		-webkit-column-count: 2;
-		-moz-column-count: 2; */
-		display: flex;
+		@media (min-width: $small) {
+			display: flex;
+		}
 	}
 }

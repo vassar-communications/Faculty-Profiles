@@ -23,12 +23,12 @@
 		.item__title,
 		.item__content {
 		    float: right;
-		    width: calc(100% - (30% + 1rem));
+		    width: calc(100% - (30.1% + 1rem));
 		}
 		.item__title {
 		    float: right;
 		    margin: 0 0 0.2em 0;
-		    width: calc(100% - (30% + 1rem));
+		    max-width: calc(100% - (30.1% + 1rem));
 			font-weight: bold;
 			    		    
 		    .maintitle {
