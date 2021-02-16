@@ -1,5 +1,6 @@
 .u-pageHome {
 	.profile__features {
+        border-bottom: 1px solid #eff0f1;
 		& {
 			overflow: hidden;
 			padding: 1rem;
@@ -11,7 +12,6 @@
 		.profile__feature {
 		    padding: .2em;
 		    overflow: hidden;
-
 			.feature__title {
 				margin-top: 0;
 

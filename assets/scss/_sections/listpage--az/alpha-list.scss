@@ -37,12 +37,25 @@
 				-moz-column-count: 2;
 				column-count: 2;
 			}
-			li {
+            li {
+                font-style: italic;
 				display: inline-block;
-				width: 100%;
+                font-family: $serif;
+                font-weight: 100;
+                strong {
+				    width: 100%;
+                    font-style: normal;
+                }
 			}
 		}
 	}
+}
+.u-folderDepartments .list--alpha .list__section {
+    li {
+        font-style: normal;
+        display: block;
+        font-family: $serif;
+    } 
 }
 .list--alpha--depts {
 	-webkit-column-count: 2;

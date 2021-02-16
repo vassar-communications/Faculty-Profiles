@@ -1,8 +1,8 @@
 .u-pageHome {
 	.PageContent {
-	    background: none;
-	    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAALElEQVQYV2NkwAKe3T/1nxFdHCQopWjGiCIBEwQphksgC8Il0AXBEtgEQRIAyTMXlUUwv28AAAAASUVORK5CYII=) repeat;
-	}
+        background: transparent url(../images/Vassar_QuadGrid-grey.png) repeat;
+        background-size: 3.44em;
+    }
 	&, body {
 		padding: 0;
 	}
@@ -10,7 +10,7 @@
 		max-width: none;
 	}
 	#{$LAYOUT__contentContainer} {
-		border: 0.6em solid #fff;
+		border: none;
 	}
 	.u-lContent,
 	.u-lMain,

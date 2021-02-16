@@ -28,3 +28,43 @@ body > p {
 .u-Search {
 	display: none !important;
 }
+
+/* branding updates Jeff Mac */
+.g-Search__submit svg
+{
+    width: 100% !important;
+}
+.u-NavSite__level--1 .u-NavSite__item {
+    font: 400 1.15em/1.1 $serif;
+}
+.u-NavSite__itemContainer .u-NavSite__item--isCurrent {
+    font-weight: 700 !important;
+}
+p {
+    font: 400 1em/1.3 $sans-serif;
+}
+p.item__title {
+    font: 400 1em/1.3 $serif;
+}
+.smallcapsTitle,
+.u-pageHome .title--homepageModule,
+.u-Bio__section#publications h3,
+.u-Bio__description h3,
+.u-VCard__item.u-VCard__org {
+    font-size: 1.4em !important;
+    text-transform: none !important;
+    font-family: $serif !important;
+}
+.u-VCard__item.u-VCard__org {
+    font-weight: 700;
+}
+.u-VCard--site .u-VCard__item, .u-VCard--site .u-VCard__info, .u-VCard--site .u-List--site, .u-VCard--site .u-List__item {
+    font: 400 normal 1em/1.2 $sans-serif;
+}
+.justfacts .fact__fact {
+    font-family: $serif;
+}
+.u-Bio__contactItemLabel {
+    font: 400 normal 100% $sans-serif;
+    text-transform: uppercase;
+}

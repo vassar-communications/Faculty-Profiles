@@ -10,9 +10,9 @@
 	.fact__fact {
 		font-family: $sans-serif;
 		font-weight: 100;
-		letter-spacing: -.05em;		
+		letter-spacing: normal;		
 		margin: 0;
-		line-height: 1;
+		line-height: .7 !important;
 		font-size: 5em;
 
 		@media screen and (min-width: $large) {
@@ -23,8 +23,9 @@
 		margin: 0;
 		font-weight: 100;
 		font-size: 1em;
-		font-family: $serif;
+		font-family: $sans-serif;
 		font-style: italic;
+        margin-bottom: 0;
 	}
 	.justfacts__list {
 		margin-top: 1em;
@@ -36,10 +37,9 @@
 			-webkit-column-count: $cols;
 			-moz-column-count: $cols;
 			column-count: $cols;
-
-
 			.justfacts__listItem {
 				display: block;
+                margin-bottom: 2.5em;
 			}
 		}
 	}

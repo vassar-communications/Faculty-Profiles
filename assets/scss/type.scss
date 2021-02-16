@@ -1,5 +1,5 @@
 html {
-    font-family: $serif;
+    font-family: $sans-serif;
 
 	@media (min-width: $medium) {
 		font-size: 1.4em;
@@ -11,7 +11,7 @@ html {
 	}
 }
 li {
-	font-weight: 100;
+	font-weight: 400;
 }
 h3 {
 	padding-bottom: 0.2em;
@@ -21,24 +21,24 @@ h5 {
 	text-transform: uppercase;
 }
 strong {
-	font-weight: bold;
+	font-weight: 700;
 }
 .u-pageTitle {
 	margin: 0;
 	font-family: $serif;
 	font-size: 2.8em;
-	font-weight: 100;
+	font-weight: 400;
 	line-height: 0.94;
 	
 	b {
-		font-weight: 100;
+		font-weight: 400;
 	}
 
 	.supertitle {
 	    font-size: 0.4em;
 	    font-style: italic;
 	    margin-left: 0.3em;
-	    font-weight: 100;
+	    font-weight: 400;
 	    
 	    .supertitle__link {
 		    &:link, &:visited {
@@ -57,13 +57,14 @@ strong {
 		display: block;
 	}
 	.subtitle {
-	    font-size: 0.38em;
-	    font-weight: 100;
+	    font-size: 0.48em;
+	    font-weight: 400;
 	    display: block;
 	    padding-bottom: 1em;
 	    margin-top: 0.4em;
 	    font-style: italic;
 	    line-height: 1.2;
+        font-family: $serif;
 	}
 }
 .profile__departments {
@@ -82,20 +83,20 @@ strong {
 	}
 }
 p em {
-	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: inherit;
 }
 .u-lContent {
-    font-family: $serif;	
+    font-family: $sans-serif;	
 	font-size: inherit;
 }
 .u-NavSite__itemContainer {
 	.u-NavSite__item--isCurrent {
-		font-weight: bold;
+		font-weight: 700;
 	}
 }
 figcaption {
 	font-family: $sans-serif;
-	font-size: 0.84em;
+	font-size: 1em;
     letter-spacing: -0.03em;
 	padding: 0.6em 0 1em 0;
 }
@@ -103,7 +104,7 @@ figcaption {
 	font-size: .8rem;
 	font-family: $sans-serif;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .smallcapsTitle {
@@ -111,5 +112,5 @@ figcaption {
 	font-family: $sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
-	font-weight: bold;
+	font-weight: 700;
 }
